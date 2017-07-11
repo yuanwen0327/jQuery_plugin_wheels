@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="libs/adminlte/css/AdminLTE.min.css" rel="stylesheet">
+  <style>
+    .chart {
+      height: 300px;
+    }
+
+    .tab-item-hide {
+      display: none;
+    }
+
+    .tab-item-clip {
+      position: absolute!important;
+      top: 0;
+      left: 0;
+      clip: rect(1px 1px 1px 1px);
+      clip: rect(1px, 1px, 1px, 1px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="nav-tabs-custom">
+          <!-- Tabs within a box -->
+          <ul id="tab" data-role="toggleTab" data-for="#wrap" data-event="click" data-hide-type="display" class="nav nav-tabs ui-sortable-handle">
+            <li><a href="#" aria-expanded="false">Area</a></li>
+            <li class="active"><a href="#" aria-expanded="true">Donut</a></li>
+          </ul>
+          <div id="wrap" class="tab-content no-padding">
+            <!-- Morris chart - Sales -->
+            <div class="chart">
+              <svg height="300" version="1.1" width="602.771" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                style="overflow: hidden; position: relative;">
+                <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.2.0</desc>
+                <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
+                <text x="12.5" y="275" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                  font-weight="normal">
+                  <tspan dy="275" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan>
+                </text>
+                <path fill="none" stroke="#aaaaaa" d="M25,275H577.771" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <text x="12.5" y="212.5" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                  font-weight="normal">
+                  <tspan dy="212.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">7,500</tspan>
+                </text>
+                <path fill="none" stroke="#aaaaaa" d="M25,212.5H577.771" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <text x="12.5" y="150" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                  font-weight="normal">
+                  <tspan dy="150" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15,000</tspan>
+                </text>
+                <path fill="none" stroke="#aaaaaa" d="M25,150H577.771" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <text x="12.5" y="87.5" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                  font-weight="normal">
+                  <tspan dy="87.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">22,500</tspan>
+                </text>
+                <path fill="none" stroke="#aaaaaa" d="M25,87.5H577.771" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <text x="12.5" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                  font-weight="normal">
+                  <tspan dy="25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30,000</tspan>
+                </text>
+                <path fill="none" stroke="#aaaaaa" d="M25,25H577.771" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <text x="476.351290400972" y="287.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
+                  style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                  font-weight="normal" transform="matrix(1,0,0,1,0,0)">
+                  <tspan dy="287.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2013</tspan>
+                </text>
+                <path fill="#74a5c2" stroke="none" d="M25,230.56666666666666C40.44803523693803,231.10833333333335,71.34410571081409,234.346875,86.79214094775213,232.73333333333335C102.24017618469017,231.11979166666669,133.13624665856622,220.05887978142076,148.58428189550426,217.65833333333333C163.86440370595383,215.28387978142075,194.42464732685298,215.553125,209.70476913730255,213.63333333333333C224.98489094775212,211.71354166666666,255.54513456865126,204.99249772313297,270.82525637910084,202.3C286.2732916160389,199.57791438979964,317.1693620899149,191.86145833333333,332.61739732685294,191.975C348.065432563791,192.08854166666666,378.96150303766706,214.80992714025498,394.4095382746051,203.20833333333331C409.6896600850547,191.73284380692166,440.2499037059538,106.50842541436464,455.5300255164034,99.66666666666666C470.6422339003645,92.9000920810313,500.8666506682867,141.67163461538462,515.9788590522478,148.775C531.4268942891858,156.03621794871796,562.3229647630619,155.0375,577.771,157.125L577.771,275L25,275Z"
+                  fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path>
+                <path fill="none" stroke="#3c8dbc" d="M25,230.56666666666666C40.44803523693803,231.10833333333335,71.34410571081409,234.346875,86.79214094775213,232.73333333333335C102.24017618469017,231.11979166666669,133.13624665856622,220.05887978142076,148.58428189550426,217.65833333333333C163.86440370595383,215.28387978142075,194.42464732685298,215.553125,209.70476913730255,213.63333333333333C224.98489094775212,211.71354166666666,255.54513456865126,204.99249772313297,270.82525637910084,202.3C286.2732916160389,199.57791438979964,317.1693620899149,191.86145833333333,332.61739732685294,191.975C348.065432563791,192.08854166666666,378.96150303766706,214.80992714025498,394.4095382746051,203.20833333333331C409.6896600850547,191.73284380692166,440.2499037059538,106.50842541436464,455.5300255164034,99.66666666666666C470.6422339003645,92.9000920810313,500.8666506682867,141.67163461538462,515.9788590522478,148.775C531.4268942891858,156.03621794871796,562.3229647630619,155.0375,577.771,157.125"
+                  stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <circle cx="25" cy="230.56666666666666" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="86.79214094775213" cy="232.73333333333335" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="148.58428189550426" cy="217.65833333333333" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="209.70476913730255" cy="213.63333333333333" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="270.82525637910084" cy="202.3" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="332.61739732685294" cy="191.975" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="394.4095382746051" cy="203.20833333333331" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="455.5300255164034" cy="99.66666666666666" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="515.9788590522478" cy="148.775" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="577.771" cy="157.125" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <path fill="#eaf3f6" stroke="none" d="M25,252.78333333333333C40.44803523693803,252.55,71.34410571081409,254.18958333333333,86.79214094775213,251.85C102.24017618469017,249.51041666666666,133.13624665856622,235.10250455373406,148.58428189550426,234.06666666666666C163.86440370595383,233.0420878870674,194.42464732685298,245.58541666666667,209.70476913730255,243.60833333333335C224.98489094775212,241.63125000000002,255.54513456865126,220.22145947176685,270.82525637910084,218.25C286.2732916160389,216.2568761384335,317.1693620899149,225.67708333333334,332.61739732685294,227.75C348.065432563791,229.82291666666666,378.96150303766706,244.68164845173044,394.4095382746051,234.83333333333334C409.6896600850547,225.0920651183971,440.2499037059538,155.53688996316757,455.5300255164034,149.39166666666665C470.6422339003645,143.3139732965009,500.8666506682867,179.0999771062271,515.9788590522478,185.94166666666666C531.4268942891858,192.93539377289378,562.3229647630619,200.03541666666666,577.771,204.73333333333335L577.771,275L25,275Z"
+                  fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path>
+                <path fill="none" stroke="#a0d0e0" d="M25,252.78333333333333C40.44803523693803,252.55,71.34410571081409,254.18958333333333,86.79214094775213,251.85C102.24017618469017,249.51041666666666,133.13624665856622,235.10250455373406,148.58428189550426,234.06666666666666C163.86440370595383,233.0420878870674,194.42464732685298,245.58541666666667,209.70476913730255,243.60833333333335C224.98489094775212,241.63125000000002,255.54513456865126,220.22145947176685,270.82525637910084,218.25C286.2732916160389,216.2568761384335,317.1693620899149,225.67708333333334,332.61739732685294,227.75C348.065432563791,229.82291666666666,378.96150303766706,244.68164845173044,394.4095382746051,234.83333333333334C409.6896600850547,225.0920651183971,440.2499037059538,155.53688996316757,455.5300255164034,149.39166666666665C470.6422339003645,143.3139732965009,500.8666506682867,179.0999771062271,515.9788590522478,185.94166666666666C531.4268942891858,192.93539377289378,562.3229647630619,200.03541666666666,577.771,204.73333333333335"
+                  stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <circle cx="25" cy="252.78333333333333" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="86.79214094775213" cy="251.85" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="148.58428189550426" cy="234.06666666666666" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="209.70476913730255" cy="243.60833333333335" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="270.82525637910084" cy="218.25" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="332.61739732685294" cy="227.75" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="394.4095382746051" cy="234.83333333333334" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="455.5300255164034" cy="149.39166666666665" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="515.9788590522478" cy="185.94166666666666" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="577.771" cy="204.73333333333335" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+              </svg>
+              <div class="morris-hover morris-default-style" style="left: 392.069px; top: 57px; display: none;">
+                <div class="morris-hover-row-label">2012 Q4</div>
+                <div class="morris-hover-point" style="color: #a0d0e0">
+                  Item 1: 15,073
+                </div>
+                <div class="morris-hover-point" style="color: #3c8dbc">
+                  Item 2: 5,967
+                </div>
+              </div>
+            </div>
+            <div class="chart">
+              <svg height="300" version="1.1" width="572.771" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                style="overflow: hidden; position: relative;">
+                <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.2.0</desc>
+                <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
+                <path fill="none" stroke="#3c8dbc" d="M286.3855,243.33333333333331A93.33333333333333,93.33333333333333,0,0,0,374.61325519497706,180.44625304313007"
+                  stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path>
+                <path fill="#3c8dbc" stroke="#ffffff" d="M286.3855,246.33333333333331A96.33333333333333,96.33333333333333,0,0,0,377.44914732624414,181.4248826052307L414.0006459070204,194.03833029452744A135,135,0,0,1,286.3855,285Z"
+                  stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <path fill="none" stroke="#f56954" d="M374.61325519497706,180.44625304313007A93.33333333333333,93.33333333333333,0,0,0,202.6703462783141,108.73398312817662"
+                  stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path>
+                <path fill="#f56954" stroke="#ffffff" d="M377.44914732624414,181.4248826052307A96.33333333333333,96.33333333333333,0,0,0,199.97950205154564,107.40757544301087L165.2975097954186,90.31165416754118A135,135,0,0,1,414.0006459070204,194.03833029452744Z"
+                  stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <path fill="none" stroke="#00a65a" d="M202.6703462783141,108.73398312817662A93.33333333333333,93.33333333333333,0,0,0,286.3561784690488,243.333328727518"
+                  stroke-width="2" opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"></path>
+                <path fill="#00a65a" stroke="#ffffff" d="M199.97950205154564,107.40757544301087A96.33333333333333,96.33333333333333,0,0,0,286.3552359912682,246.3333285794739L286.34151770357323,289.999993091277A140,140,0,0,1,160.81276941747115,88.10097469226493Z"
+                  stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <text x="286.3855" y="140" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="15px" stroke="none" fill="#000000"
+                  style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 15px; font-weight: 800;"
+                  font-weight="800" transform="matrix(1.2399,0,0,1.2399,-68.7065,-36.1353)" stroke-width="0.806547619047619">
+                  <tspan dy="5.9921875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Mail-Order Sales</tspan>
+                </text>
+                <text x="286.3855" y="160" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000"
+                  style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 14px;"
+                  transform="matrix(2.0297,0,0,2.0297,-294.8732,-156.8485)" stroke-width="0.4926897321428571">
+                  <tspan dy="4.9921875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">20</tspan>
+                </text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="nav-tabs-custom">
+          <!-- Tabs within a box -->
+          <ul id="tab2" data-role="toggleTab" data-for="#wrap2" data-event="click" data-hide-type="clip" class="nav nav-tabs ui-sortable-handle">
+            <li><a href="#" aria-expanded="false">Area</a></li>
+            <li class="active"><a href="#" aria-expanded="true">Donut</a></li>
+          </ul>
+          <div id="wrap2" class="tab-content no-padding">
+            <!-- Morris chart - Sales -->
+            <div class="chart">
+              <svg height="300" version="1.1" width="602.771" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                style="overflow: hidden; position: relative;">
+                <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.2.0</desc>
+                <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
+                <text x="12.5" y="275" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                  font-weight="normal">
+                  <tspan dy="275" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan>
+                </text>
+                <path fill="none" stroke="#aaaaaa" d="M25,275H577.771" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <text x="12.5" y="212.5" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                  font-weight="normal">
+                  <tspan dy="212.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">7,500</tspan>
+                </text>
+                <path fill="none" stroke="#aaaaaa" d="M25,212.5H577.771" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <text x="12.5" y="150" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                  font-weight="normal">
+                  <tspan dy="150" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15,000</tspan>
+                </text>
+                <path fill="none" stroke="#aaaaaa" d="M25,150H577.771" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <text x="12.5" y="87.5" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                  font-weight="normal">
+                  <tspan dy="87.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">22,500</tspan>
+                </text>
+                <path fill="none" stroke="#aaaaaa" d="M25,87.5H577.771" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <text x="12.5" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                  font-weight="normal">
+                  <tspan dy="25" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30,000</tspan>
+                </text>
+                <path fill="none" stroke="#aaaaaa" d="M25,25H577.771" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <text x="476.351290400972" y="287.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888"
+                  style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;"
+                  font-weight="normal" transform="matrix(1,0,0,1,0,0)">
+                  <tspan dy="287.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2013</tspan>
+                </text>
+                <path fill="#74a5c2" stroke="none" d="M25,230.56666666666666C40.44803523693803,231.10833333333335,71.34410571081409,234.346875,86.79214094775213,232.73333333333335C102.24017618469017,231.11979166666669,133.13624665856622,220.05887978142076,148.58428189550426,217.65833333333333C163.86440370595383,215.28387978142075,194.42464732685298,215.553125,209.70476913730255,213.63333333333333C224.98489094775212,211.71354166666666,255.54513456865126,204.99249772313297,270.82525637910084,202.3C286.2732916160389,199.57791438979964,317.1693620899149,191.86145833333333,332.61739732685294,191.975C348.065432563791,192.08854166666666,378.96150303766706,214.80992714025498,394.4095382746051,203.20833333333331C409.6896600850547,191.73284380692166,440.2499037059538,106.50842541436464,455.5300255164034,99.66666666666666C470.6422339003645,92.9000920810313,500.8666506682867,141.67163461538462,515.9788590522478,148.775C531.4268942891858,156.03621794871796,562.3229647630619,155.0375,577.771,157.125L577.771,275L25,275Z"
+                  fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path>
+                <path fill="none" stroke="#3c8dbc" d="M25,230.56666666666666C40.44803523693803,231.10833333333335,71.34410571081409,234.346875,86.79214094775213,232.73333333333335C102.24017618469017,231.11979166666669,133.13624665856622,220.05887978142076,148.58428189550426,217.65833333333333C163.86440370595383,215.28387978142075,194.42464732685298,215.553125,209.70476913730255,213.63333333333333C224.98489094775212,211.71354166666666,255.54513456865126,204.99249772313297,270.82525637910084,202.3C286.2732916160389,199.57791438979964,317.1693620899149,191.86145833333333,332.61739732685294,191.975C348.065432563791,192.08854166666666,378.96150303766706,214.80992714025498,394.4095382746051,203.20833333333331C409.6896600850547,191.73284380692166,440.2499037059538,106.50842541436464,455.5300255164034,99.66666666666666C470.6422339003645,92.9000920810313,500.8666506682867,141.67163461538462,515.9788590522478,148.775C531.4268942891858,156.03621794871796,562.3229647630619,155.0375,577.771,157.125"
+                  stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <circle cx="25" cy="230.56666666666666" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="86.79214094775213" cy="232.73333333333335" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="148.58428189550426" cy="217.65833333333333" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="209.70476913730255" cy="213.63333333333333" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="270.82525637910084" cy="202.3" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="332.61739732685294" cy="191.975" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="394.4095382746051" cy="203.20833333333331" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="455.5300255164034" cy="99.66666666666666" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="515.9788590522478" cy="148.775" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="577.771" cy="157.125" r="4" fill="#3c8dbc" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <path fill="#eaf3f6" stroke="none" d="M25,252.78333333333333C40.44803523693803,252.55,71.34410571081409,254.18958333333333,86.79214094775213,251.85C102.24017618469017,249.51041666666666,133.13624665856622,235.10250455373406,148.58428189550426,234.06666666666666C163.86440370595383,233.0420878870674,194.42464732685298,245.58541666666667,209.70476913730255,243.60833333333335C224.98489094775212,241.63125000000002,255.54513456865126,220.22145947176685,270.82525637910084,218.25C286.2732916160389,216.2568761384335,317.1693620899149,225.67708333333334,332.61739732685294,227.75C348.065432563791,229.82291666666666,378.96150303766706,244.68164845173044,394.4095382746051,234.83333333333334C409.6896600850547,225.0920651183971,440.2499037059538,155.53688996316757,455.5300255164034,149.39166666666665C470.6422339003645,143.3139732965009,500.8666506682867,179.0999771062271,515.9788590522478,185.94166666666666C531.4268942891858,192.93539377289378,562.3229647630619,200.03541666666666,577.771,204.73333333333335L577.771,275L25,275Z"
+                  fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path>
+                <path fill="none" stroke="#a0d0e0" d="M25,252.78333333333333C40.44803523693803,252.55,71.34410571081409,254.18958333333333,86.79214094775213,251.85C102.24017618469017,249.51041666666666,133.13624665856622,235.10250455373406,148.58428189550426,234.06666666666666C163.86440370595383,233.0420878870674,194.42464732685298,245.58541666666667,209.70476913730255,243.60833333333335C224.98489094775212,241.63125000000002,255.54513456865126,220.22145947176685,270.82525637910084,218.25C286.2732916160389,216.2568761384335,317.1693620899149,225.67708333333334,332.61739732685294,227.75C348.065432563791,229.82291666666666,378.96150303766706,244.68164845173044,394.4095382746051,234.83333333333334C409.6896600850547,225.0920651183971,440.2499037059538,155.53688996316757,455.5300255164034,149.39166666666665C470.6422339003645,143.3139732965009,500.8666506682867,179.0999771062271,515.9788590522478,185.94166666666666C531.4268942891858,192.93539377289378,562.3229647630619,200.03541666666666,577.771,204.73333333333335"
+                  stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <circle cx="25" cy="252.78333333333333" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="86.79214094775213" cy="251.85" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="148.58428189550426" cy="234.06666666666666" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="209.70476913730255" cy="243.60833333333335" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="270.82525637910084" cy="218.25" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="332.61739732685294" cy="227.75" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="394.4095382746051" cy="234.83333333333334" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="455.5300255164034" cy="149.39166666666665" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="515.9788590522478" cy="185.94166666666666" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+                <circle cx="577.771" cy="204.73333333333335" r="4" fill="#a0d0e0" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle>
+              </svg>
+              <div class="morris-hover morris-default-style" style="left: 392.069px; top: 57px; display: none;">
+                <div class="morris-hover-row-label">2012 Q4</div>
+                <div class="morris-hover-point" style="color: #a0d0e0">
+                  Item 1: 15,073
+                </div>
+                <div class="morris-hover-point" style="color: #3c8dbc">
+                  Item 2: 5,967
+                </div>
+              </div>
+            </div>
+            <div class="chart">
+              <svg height="300" version="1.1" width="572.771" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                style="overflow: hidden; position: relative;">
+                <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.2.0</desc>
+                <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
+                <path fill="none" stroke="#3c8dbc" d="M286.3855,243.33333333333331A93.33333333333333,93.33333333333333,0,0,0,374.61325519497706,180.44625304313007"
+                  stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path>
+                <path fill="#3c8dbc" stroke="#ffffff" d="M286.3855,246.33333333333331A96.33333333333333,96.33333333333333,0,0,0,377.44914732624414,181.4248826052307L414.0006459070204,194.03833029452744A135,135,0,0,1,286.3855,285Z"
+                  stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <path fill="none" stroke="#f56954" d="M374.61325519497706,180.44625304313007A93.33333333333333,93.33333333333333,0,0,0,202.6703462783141,108.73398312817662"
+                  stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path>
+                <path fill="#f56954" stroke="#ffffff" d="M377.44914732624414,181.4248826052307A96.33333333333333,96.33333333333333,0,0,0,199.97950205154564,107.40757544301087L165.2975097954186,90.31165416754118A135,135,0,0,1,414.0006459070204,194.03833029452744Z"
+                  stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <path fill="none" stroke="#00a65a" d="M202.6703462783141,108.73398312817662A93.33333333333333,93.33333333333333,0,0,0,286.3561784690488,243.333328727518"
+                  stroke-width="2" opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"></path>
+                <path fill="#00a65a" stroke="#ffffff" d="M199.97950205154564,107.40757544301087A96.33333333333333,96.33333333333333,0,0,0,286.3552359912682,246.3333285794739L286.34151770357323,289.999993091277A140,140,0,0,1,160.81276941747115,88.10097469226493Z"
+                  stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                <text x="286.3855" y="140" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="15px" stroke="none" fill="#000000"
+                  style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 15px; font-weight: 800;"
+                  font-weight="800" transform="matrix(1.2399,0,0,1.2399,-68.7065,-36.1353)" stroke-width="0.806547619047619">
+                  <tspan dy="5.9921875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Mail-Order Sales</tspan>
+                </text>
+                <text x="286.3855" y="160" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000"
+                  style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 14px;"
+                  transform="matrix(2.0297,0,0,2.0297,-294.8732,-156.8485)" stroke-width="0.4926897321428571">
+                  <tspan dy="4.9921875" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">20</tspan>
+                </text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <button id="changeTab" type="button" class="btn bg-maroon btn-flat margin">change tab</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
+  <![endif]-->
+  <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../dist/jquery.toggletab.js"></script>
+  <script>
+  $('#tab').on('yw.tt.change',function(e,index){
+    console.log('tab' + index +'被触发');
+  })
+
+  $('#changeTab').on('click',function(){
+    $('#tab').toggleTab(3)
+  })
+  </script>
+</body>
+
+</html>
