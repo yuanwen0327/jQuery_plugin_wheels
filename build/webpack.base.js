@@ -22,5 +22,16 @@ module.exports = {
   resolve: {
     modules: [path.resolve('./node_modules'), path.resolve('./src')],
     extensions: ['.json', '.js']
+  },
+  module: {
+    rules: [{
+      test: /\.js$/,
+      loader: 'eslint-loader',
+      enforce: 'pre',
+      include: [resolve('src')],
+      options: {
+        formatter: require('eslint-friendly-formatter')
+      }
+    }]
   }
 };

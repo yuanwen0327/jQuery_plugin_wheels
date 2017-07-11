@@ -3,6 +3,6 @@ module.exports = {
     this.moveTo(arg)
   },
   update: function () {
-    this.init();
+    this.init()
   }
 }
