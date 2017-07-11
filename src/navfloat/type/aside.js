@@ -12,6 +12,11 @@ module.exports = function () {
   var AH = ctx.$wrap.outerHeight();
   //浮动容器距离顶部的距离
   var AT = ctx.$wrap.offset().top;
+  //浮动容器底部距离顶部的距离
+  // var AB = AH + AT;
+
+  //如果参考容器高度不够，不浮动
+  if (ctx.$ele.outerHeight() + ctx.$ele.offset().top >= BB) return;
 
   var floatPoint = ctx.$ele.offset().top - ctx.options.fixTop;
 
@@ -46,7 +51,7 @@ module.exports = function () {
 
 
   function stop() {
-    if(!ctx.$wrap.hasClass('layout'))return;
+    if (!ctx.$wrap.hasClass('layout')) return;
     ctx.$wrap
       .removeClass('layout')
       .css("top", '');
