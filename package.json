@@ -1,0 +1,17 @@
+{
+  "name": "the_library_of_wheels",
+  "version": "0.0.1",
+  "description": "轮子库，不造轮子浑身难受",
+  "scripts": {
+    "build": "webpack --config build/webpack.prod.js",
+    "dev": "webpack --watch --config  build/webpack.dev.js"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "glob": "^7.1.2",
+    "webpack": "^2.4.1",
+    "webpack-merge": "^4.1.0"
+  }
+}
