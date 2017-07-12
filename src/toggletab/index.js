@@ -5,14 +5,15 @@ var clipClass = 'tab-item-clip'
 
 function ToggleTab($ele, opts) {
   this.$ele = $ele
-  this.$wrap = $($ele.data('for'))
+
+  this.options = $.extend({}, ToggleTab.DEFAULTS, this.$ele.data(), opts)
+
+  this.$wrap = $(this.options.target)
 
   this.$tabs = this.$ele.children()
   this.$items = this.$wrap.children()
 
-  this.options = $.extend({}, ToggleTab.DEFAULTS, this.$ele.data(), opts)
-
-  // console.log(this.options);
+  console.log(this.options)
 
   this.init()
 }

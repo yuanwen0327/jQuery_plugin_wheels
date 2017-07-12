@@ -28,7 +28,7 @@ var Move = function ($element, options) {
   this.init()
 
   // 监听scoll事件
-  this.$scrollDom.on('scroll', throttle(function () {
+  this.$scrollDom.on('scroll.anchormove', throttle(function () {
     setActive.call(self)
   }, 16.7))
 }

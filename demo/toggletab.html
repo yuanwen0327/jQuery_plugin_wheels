@@ -35,7 +35,7 @@
       <div class="col-sm-6">
         <div class="nav-tabs-custom">
           <!-- Tabs within a box -->
-          <ul id="tab" data-role="toggleTab" data-for="#wrap" data-event="click" data-hide-type="display" class="nav nav-tabs ui-sortable-handle">
+          <ul id="tab" data-role="toggleTab" data-target="#wrap" data-event="click" data-hide-type="display" class="nav nav-tabs ui-sortable-handle">
             <li><a href="#" aria-expanded="false">Area</a></li>
             <li class="active"><a href="#" aria-expanded="true">Donut</a></li>
           </ul>
@@ -150,7 +150,7 @@
       <div class="col-sm-6">
         <div class="nav-tabs-custom">
           <!-- Tabs within a box -->
-          <ul id="tab2" data-role="toggleTab" data-for="#wrap2" data-event="click" data-hide-type="clip" class="nav nav-tabs ui-sortable-handle">
+          <ul id="tab2" class="nav nav-tabs ui-sortable-handle">
             <li><a href="#" aria-expanded="false">Area</a></li>
             <li class="active"><a href="#" aria-expanded="true">Donut</a></li>
           </ul>
@@ -278,6 +278,12 @@
   <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
   <script src="../dist/jquery.toggletab.js"></script>
   <script>
+  $('#tab2').toggleTab({
+    target:"#wrap2",
+    event:"click",
+    hideType:"clip"
+  })
+  
   $('#tab').on('yw.tt.change',function(e,index){
     console.log('tab' + index +'被触发');
   })
