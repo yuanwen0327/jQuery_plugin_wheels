@@ -4,13 +4,12 @@
  * @returns {Number[]} - 应用了偏移的offsetTop集合
  */
 function getAnchorPoints(offset) {
-  var tops = [];
+  var tops = []
   $.each(this.anchorList, function () {
-    tops.push($(this.$$cid).offset().top - offset);
+    tops.push($(this.$$cid).offset().top - offset)
   })
-  return tops;
+  return tops
 };
-
 
 module.exports = {
   getAnchorPoints: getAnchorPoints
